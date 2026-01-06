@@ -1,19 +1,53 @@
-console.log(typeof null); //object Output 
 
-console.log([] == false); // Output True 
+//C Mini tasks 
+//1 
+let x = 1;
+let y = 2;
 
-console.log("5" + 2); //output 52 (5 is string and 2 is number)
+function sum() {
+  return x + y;
+}
+console.log(sum());
 
-console.log("5" - 2); // output 3 
+//2
+function AreaOfCircle(r) {
+  return Number((Math.PI * r * r).toFixed(2));
+}
+let radius = 2;
+let area = AreaOfCircle(radius);
 
-console.log(Boolean(""));  //output false
+console.log("Area of Circle:", area);
 
-console.log(Boolean("0"));  //output true
+//3
+function greeting(letters){
+    return letters[0].toUpperCase() + letters.slice(1).toLowerCase();
+}
+console.log(greeting("hello"));
 
-console.log(0 === -0); //output true( bsc 0 is not an integer )
+//4
+function lastDigit(n) {
+  return Math.abs(n) % 10;
+}
 
-console.log(NaN === NaN); //output false
 
-console.log(Number("10px")); //output NaN (bsc the value of number is given in string)
+let result = lastDigit(123453);
+console.log(result);
+//5
+ function isEven(n) {
+  return n % 2 === 0;
+}
+let nnumber = 6;
 
-console.log(1 + true + "2"); //output 22 (bsc we consider true as 1, so when we added string and number we get 22 
+console.log(isEven(nnumber));
+
+//6 
+function compare(a,b){
+    if (a>b){
+        console.log("b is greater than a");
+    } else if (a === b) {
+        console.log("a is equals to b");
+    }else {
+        console.log("a is less than b"); 
+    }
+}
+console.log(compare(6,6));
